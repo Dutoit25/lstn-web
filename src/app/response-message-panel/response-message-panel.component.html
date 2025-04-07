@@ -1,0 +1,14 @@
+<section class="message-panel-container" #scrollframe>
+    <div class="textarea-container">
+        <label class="textarea-label">Output</label>
+        <textarea
+                class="message"
+                [(ngModel)]="responseContent"
+                placeholder="Response from the system..."
+                type="text"
+                [disabled]="true"
+                rows=10>
+         </textarea>
+    </div>
+
+</section>

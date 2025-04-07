@@ -1,0 +1,26 @@
+<section class="message-panel-container" #scrollframe>
+  <div class="textarea-container">
+        <label class="textarea-label">Request</label>
+        <textarea
+                class="message"
+                [(ngModel)]="emailContent"
+                (input)="onMessageChange()"
+                (click)="removeInitalText()"
+                type="text"
+                rows=10>
+         </textarea>
+
+    </div>
+    <div class="button-container">
+        <button #retrieveEmailButton class="enabled-button" [disabled]="isBtnDisabled" (click)="retrieveData()">
+          <img src="assets/img.png" alt="Email Icon" class="button-icon" />
+<!--            <span>Retrieve Email</span>-->
+        </button>
+
+        <button #reponseButton class="enabled-button" [disabled]="isRespBtnDisabled" (click)="onClick()">
+            <span>Get Response</span>
+        </button>
+
+
+    </div>
+</section>

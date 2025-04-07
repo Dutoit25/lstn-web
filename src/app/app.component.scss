@@ -1,0 +1,113 @@
+.app-container{
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+
+    app-message-panel{
+        flex: 1;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+}
+
+.container-hide{
+    min-height: 0dvh !important;
+}
+
+
+.message-panel-container {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: flex-start; /* Aligns children to the left */
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.textarea-container {
+    position: relative; /* Creates a positioning context for the label */
+    width: 100%;
+}
+
+.textarea-label {
+    position: absolute; /* Position the label in relation to the textarea container */
+    top: -20px; /* Adjust the top position */
+    left: 0; /* Aligns the label to the right of the textarea container */
+    font-size: 14px; /* Adjust font size for the label */
+    color: #555555; /* Optional: Set color for better contrast */
+    font-weight: bold;
+
+}
+
+.message {
+    //width: 100%; /* Ensures textarea takes the full width of its container */
+    margin-bottom: 5px; /* Adds spacing below the textarea */
+    width: 40vw;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row; /* Stacks children vertically */
+    align-items: flex-start; /* Aligns children to the left */
+    margin-top:0px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Optional: Ensures content is horizontally centered
+    height: 45px; // Maintains the same height
+    width: 100px; // Adjust width to make it rectangular
+    border-radius: 10px; // Remove rounded corners
+    color: white;
+    background-color: #007ca1;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    span {
+        margin-left: 5px;
+    }
+}
+
+/* Disabled button styling */
+.disabled-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Optional: Ensures content is horizontally centered
+    height: 45px; // Maintains the same height
+    width: 100px; // Adjust width to make it rectangular
+    border-radius: 10px; // Remove rounded corners
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #cccccc; /* Gray background */
+    color: #666666; /* Light gray text */
+    span {
+        margin-left: 5px;
+    }
+}
+
+/* Enabled button styling */
+.enabled-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Optional: Ensures content is horizontally centered
+    height: 45px; // Maintains the same height
+    width: 100px; // Adjust width to make it rectangular
+    border-radius: 10px; // Remove rounded corners
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #007ca1;
+    color: white; /* White text */
+}
+
+.enabled-button:hover {
+    background-color: #8ccde4; /* Darker hue */
+}

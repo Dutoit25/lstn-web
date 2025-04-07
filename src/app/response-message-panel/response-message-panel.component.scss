@@ -1,0 +1,35 @@
+.message-panel-container {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: flex-start; /* Aligns children to the left */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.textarea-container {
+  position: relative; /* Creates a positioning context for the label */
+  width: 100%;
+}
+
+.textarea-label {
+  position: absolute; /* Position the label in relation to the textarea container */
+  top: -20px; /* Adjust the top position */
+  left: 0; /* Aligns the label to the right of the textarea container */
+  font-size: 14px; /* Adjust font size for the label */
+  color: #555555; /* Optional: Set color for better contrast */
+  font-weight: bold;
+
+}
+
+.message {
+  //width: 100%; /* Ensures textarea takes the full width of its container */
+  margin-bottom: 5px; /* Adds spacing below the textarea */
+  width: 40vw;
+}
+
+.button-container {
+  margin-top:0px; /* Space above the button */
+}
+

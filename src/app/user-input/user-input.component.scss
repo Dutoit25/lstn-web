@@ -1,0 +1,32 @@
+.user-input-container {
+    position: fixed; /* Fixes the container to the screen */
+    bottom: 0; /* Positions it at the bottom of the screen */
+    left: 0; /* Aligns it to the left edge of the screen */
+    width: 100%; /* Spans the width of the screen */
+    background-color: #f8f9fa; /* Optional: Sets a background color to separate it visually */
+    padding: 10px; /* Adds some padding for better appearance */
+    display: flex; /* Allows proper alignment of children (textarea and button) */
+    align-items: center; /* Vertically centers the elements inside the container */
+    gap: 10px; /* Optional: Adds space between the textarea and button */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow on top */
+}
+
+.input-textfield {
+    flex: 1; /* Makes the textarea take up available space */
+    padding: 10px; /* Adds padding inside the textarea */
+    border: 1px solid #ccc; /* Optional: Styling for the textarea border */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Sets the button background color */
+    color: #fff; /* Sets the button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Optional: Darker shade on hover */
+}

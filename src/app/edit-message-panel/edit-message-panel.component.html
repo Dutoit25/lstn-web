@@ -1,0 +1,23 @@
+<section class="message-panel-container" #scrollframe>
+    <div class="textarea-container">
+        <label class="textarea-label">Edit message</label>
+        <textarea
+                class="message"
+                [(ngModel)]="editMessage"
+                placeholder="Paste your changes here"
+                type="text"
+                rows=10>
+
+         </textarea>
+    </div>
+    <div class="button-container">
+        <button #saveChangesButton class="enabled-button"  (click)="updateRag()"
+            [disabled]="isButtonSavingInProcessing" >
+            <span>{{ buttonSavingText }}</span>
+        </button>
+        <button #copyRequestButton class="enabled-button"  (click)="copyFromResponse()"
+                [disabled]="isButtonCopyingInProcessing" >
+            <span>{{ buttonCopyFromText }}</span>
+        </button>
+    </div>
+</section>
